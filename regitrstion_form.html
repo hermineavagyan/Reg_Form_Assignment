@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegitrationForm</title>
+    <style>
+        .myInputs {
+            border-style: solid;
+            margin: 2px;
+        }
+
+        .textArea {
+            border-style: solid;
+            margin: 2px;
+        }
+
+        .identityChoices {
+            margin: 2px;
+        }
+
+        .aboutMyself {
+            margin: 2px;
+        }
+
+        .options {
+            margin: 2px;
+        }
+
+        .createAccount {
+            background: #0066A2;
+            color: white;
+            border-style: outset;
+            border-color: white;
+
+            font: 15px, arial, small-caption;
+            text-shadow: none;
+            margin: 2px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div>
+        <label><span>First Name: &ast;</span></label>
+        <input class="myInputs" type="text" name="firstName" id="firstName">
+    </div>
+
+    <div>
+        <label><span>Last Name: &ast;</span></label>
+        <input class="myInputs" type="text" name="lastName" id="lastName">
+    </div>
+
+    <div>
+        <label><span>Email address: &ast;</span></label>
+        <input class="myInputs" type="email" name="email" id="email" placeholder="Email">
+    </div>
+
+    <div>
+        <label><span>Password: &ast;</span></label>
+        <input class="myInputs" type="password" name="password" id="password" placeholder="Password">
+    </div>
+
+    <div>
+        <label><span>Confirm Password: &ast;</span></label>
+        <input class="myInputs" type="password" name="confirmPassword" id="confirmPassword"
+            placeholder="Re-enter Password">
+    </div>
+
+    <div>
+        <label>Birthday</label>
+        <input class="myInputs" type="date" name="birthday" id="birthday">
+    </div>
+
+    <div>
+        <label>Gender Identity</label>
+    </div>
+
+    <div class="identityChoices">
+
+        <input type="radio" name="maleIdentity" id="maleIdentity" value="male">
+        <label for="maleIdentity">Male</label>
+
+        <input type="radio" name="femaleIdentity" id="femaleIdentity" value="female">
+        <label for="femaleIdentity">Female</label>
+
+        <input type="radio" name="nonBinary" id="nonBinary" value="nonBinary">
+        <label for="nonBinary">Non-binary</label>
+
+        <input type="radio" name="notToAnswer" id="notToAnswer" value="notToAnswer">
+        <label for="notToAnswer">I prefer not to answer</label>
+
+    </div>
+
+    <div>
+        <label class="aboutMyself" for="myDescription"> A short description about myself</label>
+    </div>
+
+    <div>
+        <textarea class="textArea" id="myDescription" name="myDescrption" cols="50" rows="4"></textarea>
+    </div>
+
+    <div>
+        <label>Favourite Language</label>
+        <select class="options" name="progLanguages" id="progLanguages">
+            <option>JavaScript</option>
+            <option>Python</option>
+            <option>C#</option>
+            <option>Java</option>
+
+        </select>
+    </div>
+
+    <div>
+        <input class="myInputs" type="checkbox" name="accept" id="accept" checked>
+        <label for="accept">Yes, I would like to receive periodic email updates</label>
+    </div>
+
+    <input class="createAccount" type="submit" value="Create Account">
+    <h5><span>&ast;</span>Indicates a required field</h5>
+
+</body>
+
+</html>
